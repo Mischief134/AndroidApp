@@ -49,10 +49,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 //        textViewResult = findViewById(R.id.text_view_result);
 
-
+        String url = "http://10.0.2.2:3001";
+        String url_old ="https://jsonplaceholder.typicode.com/";
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com/")
+                .baseUrl("http://10.0.2.2:3001")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         JSONParser1 jason = retrofit.create(JSONParser1.class);
