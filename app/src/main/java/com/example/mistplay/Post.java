@@ -1,6 +1,7 @@
 package com.example.mistplay;
 
 
+
 import com.google.gson.annotations.SerializedName;
 
 public class Post {
